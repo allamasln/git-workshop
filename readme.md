@@ -208,3 +208,42 @@ Buen commit:
 7. Aplica el alijo y registra otro commit
 8. Comprueba con `git log` los commits registrados. 
 
+
+1- DEVELOPER1: Crea un repositorio de GitHub llamado `practice-git`. 
+
+2- DEVELOPER1: 
+	1. Clona el repositorio 
+	2. Crea una rama para modificar el archivo README.md. Si no existe crealo.
+	4. Haz cambios en dos commits sobre el README.md.  Comete un error ortográfico en alguna palabra.
+	5. Modifica el mensaje del último commit
+	6. Haz push de la rama y fusiona la rama a main con la estrategia fast-forward 
+
+   DEVELOPER2:
+1. Haz un fork del repositorio del DEVELOPER1 y clona tu fork a local
+2. Configura el repositorio remoto upstream
+3. Crea una rama para añadir un archivo CHANGELOG.md  con el contenido. 
+
+```
+# Changelog
+
+## v1.0.0
+-   Added this changelog
+```
+3. Crea un commit, 
+4. Trae los cambios nuevos que haya en la rama principal del repositorio upstream y fusionalos a tu feature branch. 
+5. Haz push de la rama a tu fork y abre un pull request contra la rama principal del upstream
+
+3- DEVELOPER 2. 
+
+1. Actualiza la rama principal y crea una nueva feature branch
+2. Haz los cambios necesario para poner un enlace arriba del README.md para ir a CHANGELOG.md
+3. Echa una mano si es necesario a tu compañero hasta que termine con el último paso de este apartado.
+4. Ahora con tu compañero en pair programming actualiza tu rama feature con los nuevos cambios del upstream. Resuelve los conflictos si es necesario 
+5. Haz un push de los cambios y abre un pull request. 
+
+  DEVELOPER 1. 
+  1. Revisa y fusiona el primer pull request del DEVELOPER2. Asegurate de hacerlo creando un merge commit. 
+  2. Pregunta a tu compañero si ya ha creado la feature branch que se le pide en el apartado 3. Esperalo y echale una mano si lo necesita.
+  3. Una vez haya creado la rama, mientras tu compañero trabaja en los cambios en README.md, actualiza tu repositorio local y crea una rama para corregir el error ortografico en el README.md
+  4. Haz el commit, pushea la rama y fusiona los cambios en la rama principal
+  5. Vuelvo con tu compañero para echarle una mano hasta que haga el pull request.
