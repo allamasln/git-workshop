@@ -196,3 +196,15 @@ Buen commit:
 3. Crea una carpeta dentro del repositorio con el nombre `copia` y haz una copia del archivo creado en el paso 2 con el nombre `copia-file.txt`
 4.  Insepecciona los objetos creados dentro del directorio `.git`.
 5. Usa `git cat-file` y localiza cada objeto (blob, tree y commit).
+
+## Ejercicio 2
+
+1.  Crea una nueva rama con el nombre `ejercicio2` en el repositorio del ejercicio uno
+2.  Cambia la referencia de HEAD para que apunte a la nueva rama
+3. Mira los archivos `.git/HEAD` y `.git/refs/heads/*`  e inspecciona a donde apuntan esas referencias (HEAD, nueva rama) 
+4. Agrega una linea de contenido al fichero file.txt. Añade los cambios al staging area
+5. Crea un Stash los cambios. 
+6. Elimina el directorio copia del staging area y registra un nuevo commit
+7. Aplica el alijo y registra otro commit
+8. Comprueba con `git log` los commits registrados. 
+
